@@ -2,10 +2,19 @@
 <html lang="en">
 
 
-<!-- Mirrored from slimhamdi.net/tunis/dark/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2020 11:44:35 GMT -->
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV3MX6WBND"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZV3MX6WBND');
+  </script>
     <meta charset="utf-8">
-    <title>Contact - Tunis Personal Portfolio</title>
+    <title>Anirudh Ambati - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -85,7 +94,6 @@
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
                 <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
                 <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <!-- <li><a href="portfolio.html"><i class="fa fa-comments"></i><span>portfolio</span></a></li> -->
             </ul>
         </div>
     </nav>
@@ -129,21 +137,21 @@
             <!-- Left Side Ends -->
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="#">
+                <form class="contactform" action="https://formspree.io/f/meqplwlp" method="POST">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <input type="text" name="name" placeholder="YOUR NAME">
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="email" name="email" placeholder="YOUR EMAIL">
+                                <input type="email" name="_replyto" placeholder="YOUR EMAIL">
                             </div>
                             <div class="col-12 col-md-4">
                                 <input type="text" name="subject" placeholder="YOUR SUBJECT">
                             </div>
                             <div class="col-12">
                                 <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
-                                <button type="submit" class="btn btn-contact">Send Message</button>
+                                <button type="submit" class="btn btn-contact" name="Send">Send Message</button>
                             </div>
                             <div class="col-12 form-message">
                                 <span class="output_message text-center font-weight-600 text-uppercase"></span>

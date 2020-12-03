@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from slimhamdi.net/tunis/dark/portfolio-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2020 11:49:37 GMT -->
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZV3MX6WBND"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZV3MX6WBND');
+  </script>
     <meta charset="utf-8">
-    <title>portfolio - Tunis Personal Portfolio</title>
+    <title>Capsule network based object detection</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Template Google Fonts -->
@@ -58,7 +66,7 @@
                 <h2>About</h2>
             </a>
         </li>
-        <li class="icon-box">
+        <li class="icon-box active">
             <i class="fa fa-briefcase"></i>
             <a href="portfolio.html">
                 <h2>Portfolio</h2>
@@ -70,12 +78,7 @@
                 <h2>Contact</h2>
             </a>
         </li>
-        <li class="icon-box active">
-            <i class="fa fa-comments"></i>
-            <a href="portfolio.html">
-                <h2>portfolio</h2>
-            </a>
-        </li>
+
     </ul>
     <!-- Fixed Navigation Ends -->
     <!-- Mobile Menu Starts -->
@@ -88,9 +91,8 @@
             <ul class="list-unstyled" id="menu">
                 <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
                 <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li class="active"><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
                 <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li class="active"><a href="portfolio.html"><i class="fa fa-comments"></i><span>portfolio</span></a></li>
             </ul>
         </div>
     </nav>
@@ -111,25 +113,18 @@
             <article class="col-12">
                 <!-- Meta Starts -->
                 <div class="meta open-sans-font">
-                    <span><i class="fa fa-user"></i> steve</span>
-                    <span class="date"><i class="fa fa-calendar"></i> 9 January 2017</span>
-                    <span><i class="fa fa-tags"></i> wordpress, business, economy, design</span>
+                    <span class="date"><i class="fa fa-calendar"></i> 22 November 2020</span>
+                    <span><i class="fa fa-tags"></i> capsule networks, object recognition</span>
                 </div>
                 <!-- Meta Ends -->
                 <!-- Article Content Starts -->
-                <h1 class="text-uppercase text-capitalize">Everything You Need to Know About Web Accessibility</h1>
-                <img src="img/portfolio/portfolio-post-1.jpg" class="img-fluid" alt="portfolio image"/>
+                <h1 class="text-uppercase text-capitalize">Rotationally Invariant Object recognition method using Capsule Networks</h1>
+                <img src="img/portfolio/caps.png" class="img-fluid" alt="portfolio image"/>
                 <div class="portfolio-excerpt open-sans-font pb-5">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p> <i>Note: This research is currently in progress. Hence, much details will not be discussed here. The above image is representative only and a reference link to the owner is given</i> </p>
+                  <p>The goal of this work is to build an object recognition model using capsule networks and inherit it's rotational invariance properties. The research is inspired amd is built upon Dr. Geoffrey Hinton's <a href="https://arxiv.org/pdf/1710.09829.pdf">Dynamic Routing between capsules</a> </p>
+                  <p>Problem with existing CNN based methods: In a regualar convolutional network, rotational and pose invariance will not be seen, though translational invariance can be seen. Any CNN based models could not be able to recognise images when they are presented in different angles or in different poses, unless they are trained on all these possible angles, poses and rotation through augmentation. This does'nt seem to be 'intelligent' as humans wont have to see an object in all possible poses to recognise it. Also there is a problem with max pool layers. These layers during the pooling, will loose all the spatial information. Dr. Hinton says <i> "The pooling operation used in convolutional neural networks is a big mistake and the fact that it works so well is a disaster." </i> Capsule networks are introduced to circumvent this problem. </p>
+                  <p>The objective of my research is to use capsule networks to build an objection recogition model and test its rotational invariance. This model has achieved an improved rotational invariance of 2.7% on images with -90° to +90° rotation and 8.1% on images with -45° to +45° rotation</p>
                 </div>
                 <!-- Article Content Ends -->
             </article>
@@ -153,6 +148,4 @@
 
 </body>
 
-
-<!-- Mirrored from slimhamdi.net/tunis/dark/portfolio-post.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 20 Oct 2020 11:49:37 GMT -->
 </html>
